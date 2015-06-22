@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.tina.droplets.DisplayPopup"
+    android:transitionGroup="false"
+    android:id="@+id/layout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="pause"
+        android:id="@+id/pause"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="187dp"
+        android:textColor="#ff657aff"
+        android:textSize="37dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="resume"
+        android:id="@+id/resume"
+        android:layout_above="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:textColor="#c925a8ff"
+        android:textIsSelectable="false"
+        android:textSize="23dp"
+        android:onClick="setContentView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="quit"
+        android:id="@+id/quit"
+        android:textColor="#e1ff5c58"
+        android:textSize="23dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:onClick="setContentView" />
+
+</RelativeLayout>

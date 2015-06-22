@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bgr">
+
+    <TextView
+        android:layout_width="385dp"
+        android:layout_height="40dp"
+        android:id="@+id/gameOver"
+        android:background="#ff468eff"
+        android:textColor="#ffffffff"
+        android:text="                                  Game Over"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:id="@+id/score"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:id="@+id/textView5"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="DROPS~"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal"
+        android:textSize="17dp"
+        android:layout_weight="100" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:id="@+id/textView4"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Quit"
+            android:id="@+id/quit"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_vertical" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Retry"
+            android:id="@+id/retry"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+</LinearLayout>
